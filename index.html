@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Tarefas</title>
+        <link rel="stylesheet" href="tarefa.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main>
+        <section id="container-form">
+            <form id="formulario" autocomplete="off">
+                <div>
+                    <input id="tarefa" type="text" placeholder="Inserir tarefa">
+                </div>
+                <div >
+                    <button id="btn-salvar" type="submit">Salvar</button>
+                </div>
+                <p id="feedback"></p>
+            </form>
+        </section>
+        <section id="relatorio-tarefa" >
+            <p >Total de tarefas: <span id="qtd-tarefa"></span></p>
+            <p>Concluídas: <span id="qtd-tarefa-concluida"></span></p>
+        </section>
+
+        <section id="container-lista">
+
+        </section>
+        <footer>
+            Desenvolvido por: Wellington Alves
+        </footer>
+        <script src="tarefa.js"></script>
+    </main>
+    </body>
+</html>

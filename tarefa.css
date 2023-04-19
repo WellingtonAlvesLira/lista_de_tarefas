@@ -1,0 +1,206 @@
+:root {
+    --branca: #ffffff;
+    --verde-claro: #a8ff78;
+    --verde-escuro: #0e8b0a;
+    --vermelho: #e72424;
+    --azul: #0000ff;
+    
+
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 19px;
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+
+
+}
+
+::selection{
+    color: #0e0d0d;
+    background-color: #1b65ec;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+li {
+    padding: 5px;
+}
+
+
+#container-form {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 200px;
+    background: var(--verde-claro);
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+    border-radius: 20px;
+    border: 2px solid var(--branca);
+}
+
+#tarefa{
+    height: 40px;
+    width: 500px;
+    text-align: center;
+    border: none;
+
+}
+
+#tarefa:focus {
+    color: var(--branca);
+    text-align: center;
+}
+
+
+#btn-salvar{
+    color: var(--branca);
+    height: 30px;
+    width: 200px;
+}
+
+#btn-salvar:hover{
+    border: 2px solid var(--branca);
+    width: 250px;
+
+}
+
+#relatorio-tarefa{
+    color: var(--branca);
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#container-lista {
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    background: transparent;
+}
+
+.lista {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid var(--branca);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--branca);
+    background: var(--verde-claro);
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+
+}
+
+.tarefa-lista {
+    list-style: none;
+    width: 90%;
+    border: none;
+    margin: 5px;
+    color: var(--branca);
+    text-align: center;
+
+}
+
+.tarefa-tarefa{
+    list-style: none;
+}
+
+.botao-deletar {
+    height: 30px;
+    border: none;
+    padding: 5px;
+    background: var(--vermelho);
+
+    color: var(--branca);
+    border-radius: 5px;
+    font-size: 14px;
+
+
+}
+
+.botao-concluir {
+    height: 30px;
+    border: none;
+    padding: 5px;
+    background: var(--verde-escuro);
+    color: var(--branca);
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+.tarefa-concluida {
+    opacity: 0.5;
+    text-decoration: line-through var(--branca);
+    transition: 4s;
+    background: var(--branca);
+    
+    
+}
+
+
+/*msg feedback forms*/
+.feedback-sucesso{
+    background: transparent;
+    color: var(--verde-escuro);
+    text-align: center;
+}
+
+.feedback-erro{
+    background: transparent;
+    color: var(--vermelho);
+    text-align: center;
+
+}
+
+.feedback-idem{
+    background: transparent;
+    color: var(--azul);
+    text-align: center;
+}
+
+
+/*Estatisticas das tarefas*/
+.qtd-tarefas {
+    color: #141E30;
+    background: var(--verde-claro);
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+    border-radius: 5px;
+    padding: 2px
+}
+
+.qtd-tarefas-concluidas{
+    background: var(--azul);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+footer{
+    position: relative;
+    bottom: -220px;
+    width: 100%;
+    text-align: center;
+    color: var(--branca);
+   padding: 5px;
+}
+
